@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--green);
+    background-image: url("./assets/background-logo.png");
+    background-size: 120vw;
+    background-repeat: no-repeat;
+    background-position-y: 15vh;
+    background-position-x: -10vw;
+    height: 100vh;
+}
+
+:root {
+    --green: #daf204;
+    --black: #131313;
+    --pink: #f90050;
+    --dark-grey: #1e1e1e;
+    --opaque-green: rgba(218, 242, 4, 0.9);
+    --opaque-black: rgba(19, 19, 19, 0.9);
+}
