@@ -1,0 +1,21 @@
+.workout-card{
+    
+    background-color: var(--black);
+    width: 250px;
+    height: 170px;
+    border-radius: 10px;
+}
+.workout-card h2{
+    color: var(--green);
+    padding: 5px;
+    font-size: 25px;
+}
+.svg-background{
+    width: 250px;
+    height: 170px;
+    background-color: transparent;
+    background-position-x: 45px;
+}
+.svg-content image {
+    fill: var(--pink);
+}

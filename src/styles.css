@@ -1,8 +1,12 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@100&display=swap');
+*{
     margin: 0;
     padding: 0;
+    font-family: "K2D", sans-serif;
+}
+fbody {
     background-color: var(--green);
-    background-image: url("./assets/background-logo.png");
+   /* background-image: url("./assets/background-logo.png");*/
     background-size: 120vw;
     background-repeat: no-repeat;
     background-position-y: 15vh;
