@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { WorkoutCardComponent } from './workout-card/workout-card.component';
-import { WorkoutCompDarModeComponent } from './workout-comp-dark.mode/workout-comp-dark.mode.component';
+import { WorkoutCardComponent } from './componentes/workout-card/workout-card.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, WorkoutCardComponent, WorkoutCompDarModeComponent],
+  imports: [RouterOutlet, WorkoutCardComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
