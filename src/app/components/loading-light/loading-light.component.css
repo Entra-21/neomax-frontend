@@ -5,6 +5,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .load-dark h1 {
@@ -12,12 +15,15 @@
     font-size: 45px;
 }
 
-.svg-container {
+.img-container {
     width: 100px;
     height: 100px;
     animation: spin 2s linear infinite;
     padding-top: 5px;
-    left: 50%+10px;
+}
+
+img {
+    width: 100px;
 }
 
 @keyframes spin {

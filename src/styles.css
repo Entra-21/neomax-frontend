@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--green);
-    /*background-image: url("./assets/background-logo.png");*/
+    /* background-image: url("./assets/background-logo.png"); */
     background-size: 120vw;
     background-repeat: no-repeat;
     background-position-y: 15vh;
