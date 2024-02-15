@@ -1,22 +1,16 @@
 <div class="diet-main">
-    <app-header [pageTitle]="title"></app-header>
-    <div class="container">
-        <div class="diet-card" *ngFor="let diet of diets">
-            <h2> {{diet.name}} </h2>
-            <img *ngIf="diet.active" class="diet-card__checkmark"  src="../../../assets/images/checkmark.png" alt="">
-            <img src="../../../assets/images/diet-dark.png" alt="">
-            <div class="options">
-                <button class="options__button">
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                </button>
-                <div class="options__menu">
-                    <a href="#">Option 1</a>
-                    <a href="#">Option 2</a>
-                    <a href="#">Option 3</a>
-                </div>
-            </div>
-        </div>
+  <app-header [pageTitle]="title"></app-header>
+  <div class="container">
+    <div class="diet-card" *ngFor="let diet of diets">
+      <h2>{{ diet.name }}</h2>
+      <img
+        *ngIf="diet.active"
+        class="diet-card__checkmark"
+        src="../../../assets/images/checkmark.png"
+        alt=""
+      />
+      <img src="../../../assets/images/diet-dark.png" alt="" />
+      <app-options-button></app-options-button>
     </div>
+  </div>
 </div>
