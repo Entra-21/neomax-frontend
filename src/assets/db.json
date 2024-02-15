@@ -1,0 +1,49 @@
+{
+    "diets": [
+        {
+            "id": 1,
+            "name": "Low carb",
+            "active": false
+        },
+        {
+            "id": 2,
+            "name": "Low carb",
+            "active": false
+        },
+        {
+            "id": 3,
+            "name": "Low carb",
+            "active": false
+        },
+        {
+            "id": 4,
+            "name": "Low carb",
+            "active": true
+        },
+        {
+            "id": 5,
+            "name": "Low carb",
+            "active": false
+        },
+        {
+            "id": 6,
+            "name": "Low carb",
+            "active": false
+        },
+        {
+            "id": 7,
+            "name": "Low carb",
+            "active": false
+        },
+        {
+            "id": 8,
+            "name": "Low carb",
+            "active": true
+        },
+        {
+            "id": 9,
+            "name": "Low carb",
+            "active": false
+        }
+    ]
+}

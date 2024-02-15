@@ -1,0 +1,92 @@
+.diet-main {
+    max-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    padding-bottom: 100px;
+}
+
+.diet-card {
+    width: 70vw;
+    height: 100px;
+    background-color: var(--black);
+    color: var(--green);
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.diet-card h2 {
+    margin: 0;
+}
+
+.diet-card img {
+    height: 30px;
+    margin-left: 10px;
+}
+
+.diet-card__checkmark {
+    height: 30px;
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+}
+
+/* Style for the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Style for the dots button */
+  .dots-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Style for each dot */
+  .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 2px;
+  }
+  
+  /* Style for the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  /* Show the dropdown content when the dots button is hovered over */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Style for dropdown links */
+  .dropdown-content a {
+    color: #333;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Style for dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
