@@ -1,37 +1,42 @@
-.div-input{
-    position: absolute;
-    top: 50%;
-    width: 330px;
-    height: 60px;
+.searchbar-main {
     display: flex;
-
+    justify-content: center;
 }
-.div-input img{
-    position: right center;
-    font-size: 80px;
-    box-sizing: border-box;
+
+.searchbar-container {
+    position: absolute;
+    top: 20px;
+    display: flex;
     background-color: var(--black);
-    width: 60px;
-    height: 60px;
+    border-radius: 25px;
+}
+.search-button {
+    position: absolute;
+    right: 5px;
+    width: 45px;
+    height: 45px;
     border-radius: 0px 25px 25px 0px;
-    background-position-y: 50%;
+    border: unset;
+    background-image: url('../../../assets/images/mag-glass.png');
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-color: var(--black);
+    background-position: center;
 }
 .input-search{
-    width: 250px;
-    height: 60px;
+    width: 300px;
+    height: 50px;
     background-color: var(--black);
     color: var(--green);
     font-size: 25px;
     padding-left : 10px;
-    border-radius: 25px 0px 0px 25px ;
-    padding: 0;
+    border: unset;
+    border-radius: 25px;
+    padding: 0px 15px;
     background-position-y: 50%;
-    
 }
 
 input::placeholder {
-    color: var(--green);
-    padding-left: 5px;
+    color: var(--opaque-grey);
     font-size: 25px;
-    position: left center;
 }
