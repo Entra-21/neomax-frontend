@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 body {
     margin: 0;
     padding: 0;
@@ -8,12 +8,11 @@ body {
     background-repeat: no-repeat;
     background-position-y: 15vh;
     background-position-x: -10vw;
-    height: 100vh;
-=======
+    height: 100vh;}
+
 @font-face {
     font-family: 'K2D';
     src: url('./assets/fonts/K2D-Regular.ttf') format('truetype'),
->>>>>>> main
 }
   
 

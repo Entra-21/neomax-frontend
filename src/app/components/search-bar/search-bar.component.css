@@ -1,0 +1,37 @@
+.div-input{
+    position: absolute;
+    top: 50%;
+    width: 330px;
+    height: 60px;
+    display: flex;
+
+}
+.div-input img{
+    position: right center;
+    font-size: 80px;
+    box-sizing: border-box;
+    background-color: var(--black);
+    width: 60px;
+    height: 60px;
+    border-radius: 0px 25px 25px 0px;
+    background-position-y: 50%;
+}
+.input-search{
+    width: 250px;
+    height: 60px;
+    background-color: var(--black);
+    color: var(--green);
+    font-size: 25px;
+    padding-left : 10px;
+    border-radius: 25px 0px 0px 25px ;
+    padding: 0;
+    background-position-y: 50%;
+    
+}
+
+input::placeholder {
+    color: var(--green);
+    padding-left: 5px;
+    font-size: 25px;
+    position: left center;
+}
