@@ -1,0 +1,17 @@
+<div class="footer">
+  <div class="footer__block --home" [ngClass]="{selected: routeSelected === 'home'}" (click)="navigateToRoute('home')">
+    <img [src]="routeSelected !== 'home' ? '../../../assets/images/home.png' : '../../../assets/images/home-dark.png'" alt="" class="icon" />
+  </div>
+  <div class="footer__block --diet" [ngClass]="{selected: routeSelected === 'diet'}" (click)="navigateToRoute('diet')">
+    <img [src]="routeSelected !== 'diet' ? '../../../assets/images/diet.png' : '../../../assets/images/diet-dark.png'" alt="" class="icon" />
+  </div>
+  <div class="footer__block --workouts" [ngClass]="{selected: routeSelected === 'workouts'}" (click)="navigateToRoute('workouts')">
+    <img [src]="routeSelected !== 'workouts' ? '../../../assets/images/logo.png' : '../../../assets/images/logo-dark.png'" alt="" class="icon" />
+  </div>
+  <div class="footer__block --results" [ngClass]="{selected: routeSelected === 'results'}" (click)="navigateToRoute('results')">
+    <img [src]="routeSelected !== 'results' ? '../../../assets/images/results.png' : '../../../assets/images/results-dark.png'" alt="" class="icon" />
+  </div>
+  <div class="footer__block --profile" [ngClass]="{selected: routeSelected === 'profile'}" (click)="navigateToRoute('profile')">
+    <img [src]="routeSelected !== 'profile' ? '../../../assets/images/profile.png' : '../../../assets/images/profile-dark.png'" alt="" class="icon" />
+  </div>
+</div>
