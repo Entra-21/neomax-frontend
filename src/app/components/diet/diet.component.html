@@ -3,7 +3,12 @@
   <div class="container">
     <div class="diet-card" *ngFor="let diet of diets">
       <h2>{{ diet.name }}</h2>
-      <img *ngIf="diet.active" class="diet-card__checkmark" src="../../../assets/images/checkmark.png" alt="" />
+      <img
+        *ngIf="diet.active"
+        class="diet-card__checkmark"
+        src="../../../assets/images/checkmark.png"
+        alt=""
+      />
       <img src="../../../assets/images/diet-dark.png" alt="" />
       <app-options-button></app-options-button>
     </div>
