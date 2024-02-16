@@ -1,0 +1,12 @@
+<div class="options" (click)="toggleOptionsMenu($event)">
+    <button class="options__button">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </button>
+    <div class="options__menu" [ngClass]="{ show: optionsMenuActive }">
+      <a href="#" (click)="selectOption('Option 1')">Option 1</a>
+      <a href="#" (click)="selectOption('Option 2')">Option 2</a>
+      <a href="#" (click)="selectOption('Option 3')">Option 3</a>
+    </div>
+  </div>
