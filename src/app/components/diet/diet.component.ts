@@ -5,6 +5,7 @@ import { HeaderComponent } from '../header/header.component';
 import { OptionsButtonComponent } from '../options-button/options-button.component';
 import { AddButtonComponent } from '../add-button/add-button.component';
 
+
 @Component({
   selector: 'app-diet',
   standalone: true,
