@@ -4,6 +4,7 @@ import { ApiService } from '../../services/api.service';
 import { HeaderComponent } from '../header/header.component';
 import { OptionsButtonComponent } from '../options-button/options-button.component';
 
+
 @Component({
   selector: 'app-diet',
   standalone: true,

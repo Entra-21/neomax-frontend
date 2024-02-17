@@ -1,29 +1,25 @@
 .workouts-main {
     width: 100vw;
-    
+    max-height: 100vh;
+    margin: 80px 0px;
+    overflow-y: auto;
 }
 
 h2 {
-    margin-left: 20px;
+    margin: 0px 20px;
     font-size: 50px;
 }
 
-.workouts-scroll {
-    overflow-x: scroll;
-
+.workouts-container__scroll {
+    overflow-x: auto;
 }
 
-.workout-container {
+.workouts-container__render {
     display: flex;
     width: fit-content;
-    position: relative;
 }
 
-.workout-container h2 {
-    position: absolute;
-}
-
-.workout-card{
+.workouts-container__card{
     background-color: var(--black);
     width: 250px;
     height: 150px;
@@ -31,8 +27,9 @@ h2 {
     border-radius: 20px;
     margin: 10px;
 }
-.workout-card h2{
+.workouts-container__card h2{
     color: var(--green);
     padding: 5px;
     font-size: 25px;
+    margin: 0;
 }

@@ -50,7 +50,7 @@
         {
             "id": 1,
             "name": "Monstrão",
-            "routine": [
+            "routines": [
                 {
                     "id": 1,
                     "title": "Treino A",
@@ -122,7 +122,7 @@
         {
             "id": 2,
             "name": "Verão 2025",
-            "routine": [
+            "routines": [
                 {
                     "id": 1,
                     "title": "Treino A",
