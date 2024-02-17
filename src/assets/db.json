@@ -45,5 +45,151 @@
             "name": "Low carb",
             "active": false
         }
+    ],
+    "workouts": [
+        {
+            "id": 1,
+            "name": "Monstrão",
+            "routine": [
+                {
+                    "id": 1,
+                    "title": "Treino A",
+                    "exercises": [
+                        {
+                            "id": 1,
+                            "name": "Ferro atrás"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Ferro atrás"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Ferro atrás"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Ferro atrás"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Treino B",
+                    "exercises": [
+                        {
+                            "id": 1,
+                            "name": "Ferro atrás"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Ferro atrás"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Ferro atrás"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Ferro atrás"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "title": "Treino C",
+                    "exercises": [
+                        {
+                            "id": 1,
+                            "name": "Ferro atrás"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Ferro atrás"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Ferro atrás"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Ferro atrás"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Verão 2025",
+            "routine": [
+                {
+                    "id": 1,
+                    "title": "Treino A",
+                    "exercises": [
+                        {
+                            "id": 1,
+                            "name": "Ferro atrás"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Ferro atrás"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Ferro atrás"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Ferro atrás"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Treino B",
+                    "exercises": [
+                        {
+                            "id": 1,
+                            "name": "Ferro atrás"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Ferro atrás"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Ferro atrás"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Ferro atrás"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "title": "Treino C",
+                    "exercises": [
+                        {
+                            "id": 1,
+                            "name": "Ferro atrás"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Ferro atrás"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Ferro atrás"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Ferro atrás"
+                        }
+                    ]
+                }
+            ]
+        }
     ]
 }
