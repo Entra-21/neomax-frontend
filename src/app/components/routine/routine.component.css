@@ -1,0 +1,67 @@
+.routine-main {
+  text-align: center;
+}
+
+.routine-container {
+    margin-bottom: 85px;
+}
+
+.exercise-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0px;
+}
+
+.exercise-card {
+  width: 200px;
+  height: fit-content;
+  border-radius: 20px;
+}
+
+.exercise-card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 0px 3px 10px rgb(70, 70, 70);
+}
+
+.exercise-card h2 {
+  background-color: var(--black);
+  margin: 0;
+  color: var(--green);
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 20px 20px 0px 0px;
+  border-bottom: 2px solid var(--green);
+}
+
+.exercise-execution {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 18px;
+}
+
+.exercise-execution__row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.exercise-execution span {
+    display: inline-block;
+}
+
+.minus, .plus {
+    background-color: transparent;
+    border: unset;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    font-size: 34px;
+}
+
+.minus:active, .plus:active {
+    background-color: var(--opaque-grey);
+}
