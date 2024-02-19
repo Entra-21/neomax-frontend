@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
+import { ApiService } from '../../services/api.service';
 
 @Component({
   selector: 'app-options-button',
@@ -9,6 +10,8 @@ import { Component, HostListener } from '@angular/core';
   styleUrl: './options-button.component.css'
 })
 export class OptionsButtonComponent {
+
+  constructor(public api: ApiService) { }
 
   optionsMenuActive: boolean = false;
   private static currentlyOpenOptionsMenu: OptionsButtonComponent | null = null;
@@ -34,7 +37,7 @@ export class OptionsButtonComponent {
 
   @HostListener('document:click', ['$event'])
   onClick(event: MouseEvent) {
-    if(!event.target) return;
+    if (!event.target) return;
     const target = event.target as HTMLElement;
     if (!target.closest('.options')) {
       this.deactivateOptionsMenu();

@@ -6,6 +6,7 @@
       <div class="workouts-container__render">
         <div
           class="workouts-container__card"
+          [ngClass]="{ '--dark': api.darkTheme === true }"
           *ngFor="let routine of workout.routines"
           (click)="navigateToRoutine(workout.id, routine.id)"
         >

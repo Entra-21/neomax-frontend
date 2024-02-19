@@ -11,6 +11,8 @@ export class ApiService {
 
   private apiUrl = 'assets/db.json'
 
+  darkTheme: boolean = false;
+
   constructor(private http: HttpClient) { }
 
   getTestData(): Observable<TestData> {

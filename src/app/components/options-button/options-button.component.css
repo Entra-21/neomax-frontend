@@ -47,3 +47,7 @@
 .dropdown-content a:hover {
   background-color: #ddd;
 }
+
+.options__button.--dark .dot {
+  background-color: var(--black);
+}

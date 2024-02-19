@@ -13,7 +13,7 @@ import { HeaderComponent } from '../header/header.component';
 })
 export class WorkoutsComponent {
 
-  constructor(private api: ApiService, private router: Router) { }
+  constructor(public api: ApiService, private router: Router) { }
 
   title: string = 'Workouts';
   workouts: any[] = [];
