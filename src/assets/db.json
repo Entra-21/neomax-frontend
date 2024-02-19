@@ -57,19 +57,23 @@
                     "exercises": [
                         {
                             "id": 1,
-                            "name": "Ferro atrás"
+                            "name": "Elevação de orbe espiritual",
+                            "gif": "../../../assets/gifs/gif2.png"
                         },
                         {
                             "id": 2,
-                            "name": "Ferro atrás"
+                            "name": "Câncer de panturrilha",
+                            "gif": "../../../assets/gifs/gif1.png"
                         },
                         {
                             "id": 3,
-                            "name": "Ferro atrás"
+                            "name": "Espancamento de indivíduo engravatado",
+                            "gif": "../../../assets/gifs/gif3.png"
                         },
                         {
                             "id": 4,
-                            "name": "Ferro atrás"
+                            "name": "Chute aéreo higiênico",
+                            "gif": "../../../assets/gifs/gif4.png"
                         }
                     ]
                 },
