@@ -1,6 +1,7 @@
 export interface Exercise {
     id: number;
     name: string;
+    gif: string;
 }
 
 export interface Routine {
