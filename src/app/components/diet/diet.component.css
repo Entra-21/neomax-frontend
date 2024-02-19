@@ -40,3 +40,8 @@
   position: absolute;
   padding: 0px;
 }
+
+.diet-card.--dark {
+  background-color: var(--pink);
+  color: var(--black);
+}

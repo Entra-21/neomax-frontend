@@ -15,7 +15,7 @@ import { AddButtonComponent } from '../add-button/add-button.component';
 })
 export class DietComponent {
 
-  constructor(private api: ApiService) { }
+  constructor(public api: ApiService) { }
 
   title: string = 'Diets';
   diets: any[] = [];

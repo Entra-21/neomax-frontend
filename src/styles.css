@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'K2D';
-    src: url('./assets/fonts/K2D-Regular.ttf') format('truetype'),
+    src: url('./assets/fonts/K2D-Light.ttf') format('truetype'),
 }
   
 
@@ -18,12 +18,6 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--green);
-    background-image: url("./assets/images/background-logo.png");
-    background-size: 120vw;
-    background-repeat: no-repeat;
-    background-position-y: 15vh;
-    background-position-x: -10vw;
     font-family: 'K2D', sans-serif;
-    color: var(--black);
+    letter-spacing: 3px;
 }

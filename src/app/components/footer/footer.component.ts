@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ApiService } from '../../services/api.service';
 
 @Component({
   selector: 'app-footer',
@@ -14,7 +15,7 @@ export class FooterComponent {
 
   routeSelected: string = 'home'
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public api: ApiService) { }
 
 
 

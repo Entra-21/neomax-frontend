@@ -1,5 +1,5 @@
 <div class="options" (click)="toggleOptionsMenu($event)">
-    <button class="options__button">
+    <button class="options__button" [ngClass]="{ '--dark': api.darkTheme === true }">
       <div class="dot"></div>
       <div class="dot"></div>
       <div class="dot"></div>

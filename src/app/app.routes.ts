@@ -3,10 +3,12 @@ import { HomeComponent } from './components/home/home.component';
 import { DietComponent } from './components/diet/diet.component';
 import { WorkoutsComponent } from './components/workouts/workouts.component';
 import { RoutineComponent } from './components/routine/routine.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 export const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'diet', component: DietComponent },
     { path: 'workouts', component: WorkoutsComponent },
-    { path: 'workouts/:workoutId/:routineId', component: RoutineComponent }
+    { path: 'workouts/:workoutId/:routineId', component: RoutineComponent },
+    { path: 'profile', component: ProfileComponent }
 ];
