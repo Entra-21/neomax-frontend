@@ -1,9 +1,11 @@
 .routine-main {
+  max-height: 100vh;
   text-align: center;
+  overflow-y: auto;
 }
 
 .routine-container {
-    margin-bottom: 85px;
+  margin-bottom: 80px;
 }
 
 .exercise-container {
@@ -29,10 +31,10 @@
   background-color: var(--black);
   margin: 0;
   color: var(--green);
-  font-size: 20px;
+  font-size: 18px;
   padding: 5px;
   border-radius: 20px 20px 0px 0px;
-  border-bottom: 2px solid var(--green);
+  border-bottom: 3px solid var(--green);
 }
 
 .exercise-execution {
@@ -41,27 +43,40 @@
   flex-direction: column;
   justify-content: space-evenly;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .exercise-execution__row {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .exercise-execution span {
-    display: inline-block;
+  display: inline-block;
 }
 
-.minus, .plus {
-    background-color: transparent;
-    border: unset;
-    border-radius: 25px;
-    width: 50px;
-    height: 50px;
-    font-size: 34px;
+.minus,
+.plus {
+  background-color: transparent;
+  border: unset;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  font-size: 34px;
 }
 
-.minus:active, .plus:active {
-    background-color: var(--opaque-grey);
+.minus:active,
+.plus:active {
+  background-color: var(--opaque-grey);
+}
+
+.exercise-card.--dark h2 {
+  background-color: var(--pink);
+  color: var(--black);
+  border-bottom: 3px solid var(--black);
+}
+
+.exercise-execution.--dark button {
+  color: var(--green);
 }
