@@ -18,7 +18,7 @@ export class RoutineComponent {
   routineId: number = 0;
   routine?: Routine;
 
-  constructor(private api: ApiService, private route: ActivatedRoute) { }
+  constructor(public api: ApiService, private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.route.params.subscribe(params => {

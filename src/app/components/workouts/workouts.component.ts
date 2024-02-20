@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { ApiService } from '../../services/api.service';
 import { Router } from '@angular/router';
 import { HeaderComponent } from '../header/header.component';
+import { AddButtonComponent } from '../add-button/add-button.component';
 
 @Component({
   selector: 'app-workouts',
   standalone: true,
-  imports: [CommonModule, HeaderComponent],
+  imports: [CommonModule, HeaderComponent, AddButtonComponent],
   templateUrl: './workouts.component.html',
   styleUrl: './workouts.component.css'
 })
