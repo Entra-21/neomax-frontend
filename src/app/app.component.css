@@ -17,5 +17,5 @@
 .main.--dark {
     background-color: var(--black);
     background-image: url("../assets/images/background-logo-dark.png");
-    color: var(--green);
+    color: var(--light-grey);
 }

@@ -1,0 +1,108 @@
+.day-expandable-container {
+  height: 55px;
+  transition: height 0.5s ease;
+  margin: 10px 0px;
+  border-bottom: 2px solid var(--black);
+}
+
+.day-expandable-container.expanded {
+  height: fit-content;
+}
+
+.day-expandable-container.expanded h2 {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.day-expandable-container__header {
+  display: flex;
+  width: 80vw;
+  height: fit-content;
+}
+
+.day-expandable-container__header h2 {
+  margin: 10px 10px;
+}
+
+.expand-button {
+  background-color: transparent;
+  border: unset;
+  position: relative;
+  align-self: center;
+  font-size: 40px;
+  color: var(--black);
+}
+
+.day-meals {
+  display: none;
+}
+
+.day-meals.expanded {
+  display: block;
+}
+
+.headers {
+  display: flex;
+  justify-content: space-around;
+}
+
+.headers h3 {
+  background-image: linear-gradient(
+    to right,
+    var(--dark-grey),
+    rgb(10, 10, 10)
+  );
+  color: var(--green);
+  width: 150px;
+  padding: 5px 0px;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+
+.meal {
+  display: flex;
+}
+
+.meal span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 10px 0px;
+  font-weight: bolder;
+  text-shadow: 1px 0px 3px var(--dark-grey);
+}
+
+.meal-time {
+  font-size: 30px;
+}
+
+.meal-name {
+  font-size: 20px;
+}
+
+.day-expandable-container.--dark {
+  border-color: var(--light-grey);
+}
+
+.day-expandable-container.expanded.--dark {
+  border-color: var(--green);
+}
+
+.day-expandable-container.expanded.--dark h2 {
+  color: var(--green);
+}
+
+.day-expandable-container.--dark button {
+  color: var(--light-grey);
+}
+
+.day-expandable-container.expanded.--dark button {
+  color: var(--green);
+}
+
+.headers.--dark h3 {
+  color: var(--light-grey);
+  text-shadow: 1px 0px 3px var(--dark-grey);
+}
+

@@ -1,0 +1,7 @@
+<div class="diet-main">
+  <h1>{{ diet?.name }}</h1>
+  <div class="days-container">
+    <app-diet-day-container *ngFor="let day of diet?.days" [day]="day">
+    </app-diet-day-container>
+  </div>
+</div>

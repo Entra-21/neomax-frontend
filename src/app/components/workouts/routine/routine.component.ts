@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
-import { ApiService } from '../../services/api.service';
-import { Routine } from '../../services/interfaces';
-import { HeaderComponent } from '../header/header.component';
+import { ApiService } from '../../../services/api.service';
+import { Routine } from '../../../services/interfaces';
+import { HeaderComponent } from '../../header/header.component';
 
 @Component({
   selector: 'app-routine',
@@ -28,6 +28,5 @@ export class RoutineComponent {
     this.api.getRoutineById(this.workoutId, this.routineId).subscribe(data => {
       this.routine = data;
     });
-    return console.log(this.routine);
   }
 }

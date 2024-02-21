@@ -3,8 +3,8 @@
     <div class="footer__block --home" [ngClass]="{selected: routeSelected === 'home'}" (click)="navigateToRoute('home')">
       <img [src]="routeSelected !== 'home' ? '../../../assets/images/home.png' : '../../../assets/images/home-dark.png'" alt="" class="icon" />
     </div>
-    <div class="footer__block --diet" [ngClass]="{selected: routeSelected === 'diet'}" (click)="navigateToRoute('diet')">
-      <img [src]="routeSelected !== 'diet' ? '../../../assets/images/diet.png' : '../../../assets/images/diet-dark.png'" alt="" class="icon" />
+    <div class="footer__block --diet" [ngClass]="{selected: routeSelected === 'diets'}" (click)="navigateToRoute('diets')">
+      <img [src]="routeSelected !== 'diets' ? '../../../assets/images/diet.png' : '../../../assets/images/diet-dark.png'" alt="" class="icon" />
     </div>
     <div class="footer__block --workouts" [ngClass]="{selected: routeSelected === 'workouts'}" (click)="navigateToRoute('workouts')">
       <img [src]="routeSelected !== 'workouts' ? '../../../assets/images/logo.png' : '../../../assets/images/logo-dark.png'" alt="" class="icon" />
@@ -20,8 +20,8 @@
     <div class="footer__block --home" [ngClass]="{'selected --dark': routeSelected === 'home'}" (click)="navigateToRoute('home')">
       <img [src]="routeSelected === 'home' ? '../../../assets/images/home.png' : '../../../assets/images/home-dark.png'" alt="" class="icon" />
     </div>
-    <div class="footer__block --diet" [ngClass]="{'selected --dark': routeSelected === 'diet'}" (click)="navigateToRoute('diet')">
-      <img [src]="routeSelected === 'diet' ? '../../../assets/images/diet.png' : '../../../assets/images/diet-dark.png'" alt="" class="icon" />
+    <div class="footer__block --diet" [ngClass]="{'selected --dark': routeSelected === 'diets'}" (click)="navigateToRoute('diets')">
+      <img [src]="routeSelected === 'diets' ? '../../../assets/images/diet.png' : '../../../assets/images/diet-dark.png'" alt="" class="icon" />
     </div>
     <div class="footer__block --workouts" [ngClass]="{'selected --dark': routeSelected === 'workouts'}" (click)="navigateToRoute('workouts')">
       <img [src]="routeSelected === 'workouts' ? '../../../assets/images/logo.png' : '../../../assets/images/logo-dark.png'" alt="" class="icon" />

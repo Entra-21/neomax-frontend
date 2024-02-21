@@ -3,48 +3,325 @@
         {
             "id": 1,
             "name": "Low carb",
+            "days": [
+                {
+                    "id": 1,
+                    "name": "Monday",
+                    "meals": [
+                        {
+                            "id": 1,
+                            "name": "Scrambled eggs",
+                            "time": "9:30"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Scrambled eggs",
+                            "time": "12:30"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Scrambled eggs",
+                            "time": "15:30"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Scrambled eggs",
+                            "time": "18:30"
+                        },
+                        {
+                            "id": 5,
+                            "name": "Scrambled eggs",
+                            "time": "21:30"
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "Tuesday",
+                    "meals": [
+                        {
+                            "id": 1,
+                            "name": "Scrambled eggs",
+                            "time": "9:30"
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "Wednesday",
+                    "meals": [
+                        {
+                            "id": 1,
+                            "name": "Scrambled eggs",
+                            "time": "9:30"
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "Thursday",
+                    "meals": [
+                        {
+                            "id": 1,
+                            "name": "Scrambled eggs",
+                            "time": "9:30"
+                        }
+                    ]
+                }
+            ],
             "active": false
         },
         {
             "id": 2,
-            "name": "Low carb",
+            "name": "Muscle gain",
+            "days": [
+                {
+                    "id": 1,
+                    "name": "Monday",
+                    "meals": [
+                        {
+                            "id": 1,
+                            "name": "Roasted chicken and sweet potatoes",
+                            "time": "12:30"
+                        }
+                    ]
+                }
+            ],
             "active": false
         },
         {
             "id": 3,
-            "name": "Low carb",
-            "active": false
-        },
-        {
-            "id": 4,
-            "name": "Low carb",
+            "name": "Fuck it",
+            "days": [
+                {
+                    "id": 1,
+                    "name": "Segunda-feira",
+                    "meals": [
+                        {
+                            "id": 1,
+                            "name": "Pepperoni pizza",
+                            "time": "8:00"
+                        }
+                    ]
+                }
+            ],
             "active": true
         },
         {
-            "id": 5,
+            "id": 1,
             "name": "Low carb",
+            "days": [
+                {
+                    "id": 1,
+                    "name": "Monday",
+                    "meals": [
+                        {
+                            "id": 1,
+                            "name": "Scrambled eggs",
+                            "time": "9:30"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Scrambled eggs",
+                            "time": "12:30"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Scrambled eggs",
+                            "time": "15:30"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Scrambled eggs",
+                            "time": "18:30"
+                        },
+                        {
+                            "id": 5,
+                            "name": "Scrambled eggs",
+                            "time": "21:30"
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "Tuesday",
+                    "meals": [
+                        {
+                            "id": 1,
+                            "name": "Scrambled eggs",
+                            "time": "9:30"
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "Wednesday",
+                    "meals": [
+                        {
+                            "id": 1,
+                            "name": "Scrambled eggs",
+                            "time": "9:30"
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "Thursday",
+                    "meals": [
+                        {
+                            "id": 1,
+                            "name": "Scrambled eggs",
+                            "time": "9:30"
+                        }
+                    ]
+                }
+            ],
             "active": false
         },
         {
-            "id": 6,
-            "name": "Low carb",
+            "id": 2,
+            "name": "Muscle gain",
+            "days": [
+                {
+                    "id": 1,
+                    "name": "Monday",
+                    "meals": [
+                        {
+                            "id": 1,
+                            "name": "Roasted chicken and sweet potatoes",
+                            "time": "12:30"
+                        }
+                    ]
+                }
+            ],
             "active": false
         },
         {
-            "id": 7,
-            "name": "Low carb",
-            "active": false
-        },
-        {
-            "id": 8,
-            "name": "Low carb",
+            "id": 3,
+            "name": "Fuck it",
+            "days": [
+                {
+                    "id": 1,
+                    "name": "Segunda-feira",
+                    "meals": [
+                        {
+                            "id": 1,
+                            "name": "Pepperoni pizza",
+                            "time": "8:00"
+                        }
+                    ]
+                }
+            ],
             "active": true
         },
         {
-            "id": 9,
+            "id": 1,
             "name": "Low carb",
+            "days": [
+                {
+                    "id": 1,
+                    "name": "Monday",
+                    "meals": [
+                        {
+                            "id": 1,
+                            "name": "Scrambled eggs",
+                            "time": "9:30"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Scrambled eggs",
+                            "time": "12:30"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Scrambled eggs",
+                            "time": "15:30"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Scrambled eggs",
+                            "time": "18:30"
+                        },
+                        {
+                            "id": 5,
+                            "name": "Scrambled eggs",
+                            "time": "21:30"
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "Tuesday",
+                    "meals": [
+                        {
+                            "id": 1,
+                            "name": "Scrambled eggs",
+                            "time": "9:30"
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "Wednesday",
+                    "meals": [
+                        {
+                            "id": 1,
+                            "name": "Scrambled eggs",
+                            "time": "9:30"
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "Thursday",
+                    "meals": [
+                        {
+                            "id": 1,
+                            "name": "Scrambled eggs",
+                            "time": "9:30"
+                        }
+                    ]
+                }
+            ],
             "active": false
+        },
+        {
+            "id": 2,
+            "name": "Muscle gain",
+            "days": [
+                {
+                    "id": 1,
+                    "name": "Monday",
+                    "meals": [
+                        {
+                            "id": 1,
+                            "name": "Roasted chicken and sweet potatoes",
+                            "time": "12:30"
+                        }
+                    ]
+                }
+            ],
+            "active": false
+        },
+        {
+            "id": 3,
+            "name": "Fuck it",
+            "days": [
+                {
+                    "id": 1,
+                    "name": "Segunda-feira",
+                    "meals": [
+                        {
+                            "id": 1,
+                            "name": "Pepperoni pizza",
+                            "time": "8:00"
+                        }
+                    ]
+                }
+            ],
+            "active": true
         }
+        
     ],
     "workouts": [
         {

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, map } from 'rxjs';
-import { TestData, Routine, Workout } from './interfaces';
+import { TestData, Routine, Workout, Diet } from './interfaces';
 
 
 @Injectable({
@@ -11,7 +11,7 @@ export class ApiService {
 
   private apiUrl = 'assets/db.json'
 
-  darkTheme: boolean = false;
+  darkTheme: boolean = true;
 
   constructor(private http: HttpClient) { }
 
@@ -28,6 +28,12 @@ export class ApiService {
   getRoutineById(workoutId: number, routineId: number): Observable<Routine | undefined> {
     return this.getWorkoutById(workoutId).pipe(
       map((data: Workout | undefined) => data?.routines.find(routine => routine.id === routineId))
+    );
+  }
+
+  getDietById(dietId: number): Observable<Diet | undefined> {
+    return this.getTestData().pipe(
+      map((data: TestData) => data?.diets.find(diet => diet.id === dietId))
     );
   }
 }

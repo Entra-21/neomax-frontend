@@ -72,9 +72,12 @@
 }
 
 .exercise-card.--dark h2 {
-  background-color: var(--pink);
-  color: var(--black);
-  border-bottom: 3px solid var(--black);
+  border: 2px solid var(--pink);
+}
+
+.exercise-card.--dark img {
+  box-sizing: border-box;
+  border: 2px solid var(--pink);
 }
 
 .exercise-execution.--dark button {
