@@ -1,0 +1,24 @@
+<div
+  class="day-expandable-container"
+  (click)="toggleExpansion()"
+  [ngClass]="{
+    expanded: isExpanded === true,
+    '--dark': api.darkTheme === true
+  }"
+>
+  <div class="day-expandable-container__header">
+    <button class="expand-button" [ngClass]="{ '--dark': api.darkTheme === true }" *ngIf="isExpanded">-</button>
+    <button class="expand-button" [ngClass]="{ '--dark': api.darkTheme === true }" *ngIf="!isExpanded">+</button>
+    <h2>{{ day?.name }}</h2>
+  </div>
+  <div class="day-meals" [ngClass]="{ expanded: isExpanded === true }">
+    <div class="headers" [ngClass]="{ '--dark': api.darkTheme === true }">
+      <h3>Time</h3>
+      <h3>Meal</h3>
+    </div>
+    <div class="meal" *ngFor="let meal of day?.meals">
+      <span class="meal-time">{{ meal.time }} </span>
+      <span class="meal-name">{{ meal.name }} </span>
+    </div>
+  </div>
+</div>

@@ -49,5 +49,5 @@
 }
 
 .options__button.--dark .dot {
-  background-color: var(--black);
+  background-color: var(--light-grey);
 }

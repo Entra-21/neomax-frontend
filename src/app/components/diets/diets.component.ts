@@ -1,21 +1,22 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ApiService } from '../../services/api.service';
+import { Router } from '@angular/router';
 import { HeaderComponent } from '../header/header.component';
 import { OptionsButtonComponent } from '../options-button/options-button.component';
 import { AddButtonComponent } from '../add-button/add-button.component';
 
 
 @Component({
-  selector: 'app-diet',
+  selector: 'app-diets',
   standalone: true,
   imports: [CommonModule, HeaderComponent, OptionsButtonComponent, AddButtonComponent],
-  templateUrl: './diet.component.html',
-  styleUrl: './diet.component.css'
+  templateUrl: './diets.component.html',
+  styleUrl: './diets.component.css'
 })
-export class DietComponent {
+export class DietsComponent {
 
-  constructor(public api: ApiService) { }
+  constructor(public api: ApiService, private router: Router) { }
 
   title: string = 'Diets';
   diets: any[] = [];
@@ -24,5 +25,9 @@ export class DietComponent {
     this.api.getTestData().subscribe(data => {
       this.diets = data.diets;
     })
+  }
+
+  navigateToDiet(dietId:number) {
+    this.router.navigate([`/diets/${dietId}`])
   }
 }

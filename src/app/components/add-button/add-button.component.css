@@ -1,17 +1,17 @@
 .add-button {
-    background-image: url(../../../assets/images/add.png);
-    background-size: cover;
-    position: absolute;
-    right: 10px;
-    bottom: 90px;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    border: 2px solid var(--green);
-
+  background-image: url(../../../assets/images/add.png);
+  background-size: cover;
+  position: absolute;
+  right: 10px;
+  bottom: 90px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid var(--green);
+  box-shadow: 3px 3px 5px rgba(53, 53, 53, 0.7);
 }
 
 .add-button.--dark {
-    background-image: url(../../../assets/images/add-dark.png);
-    border: 2px solid var(--black);
+  background-image: url(../../../assets/images/add-dark.png);
+  border: 2px solid var(--black);
 }
