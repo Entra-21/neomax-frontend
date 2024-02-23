@@ -1,19 +1,35 @@
 <div class="workouts-main">
   <app-header [pageTitle]="title"></app-header>
-  <div class="workouts-container" *ngFor="let workout of workouts">
-    <h2 class="workout-title" [ngClass]="{ '--dark': api.darkTheme === true }">{{ workout.name }}</h2>
-    <div class="workouts-container__scroll">
-      <div class="workouts-container__render">
-        <div
-          class="workouts-container__card"
-          [ngClass]="{ '--dark': api.darkTheme === true }"
-          *ngFor="let routine of workout.routines"
-          (click)="navigateToRoutine(workout.id, routine.id)"
-        >
-          <h2>{{ routine.title }}</h2>
+  <div class="workouts-scroll">
+    <div class="workouts-container" *ngFor="let workout of workouts">
+      <h2
+        class="workout-title"
+        [ngClass]="{ '--dark': api.darkTheme === true }"
+      >
+        {{ workout.name }}
+      </h2>
+      <div class="workouts-container__scroll">
+        <div class="workouts-container__render">
+          <div
+            class="workouts-container__card"
+            [ngClass]="{ '--dark': api.darkTheme === true }"
+            *ngFor="let routine of workout.routines"
+            (click)="navigateToRoutine(workout.id, routine.id)"
+          >
+            <h2>{{ routine.title }}</h2>
+          </div>
+          <div class="workouts-container__new-card">
+            <button (click)="openRoutineModal(workout.id)"></button>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <app-add-button></app-add-button>
+  <app-workout-modal-menu
+    (workoutCreated)="refreshWorkouts()"
+  ></app-workout-modal-menu>
+  <app-routine-modal-menu
+    (routineCreated)="refreshWorkouts()"
+  ></app-routine-modal-menu>
+  <app-add-button (click)="openWorkoutModal()"></app-add-button>
 </div>

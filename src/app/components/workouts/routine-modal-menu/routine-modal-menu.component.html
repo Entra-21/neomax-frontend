@@ -1,0 +1,11 @@
+<div class="modal" *ngIf="isOpen">
+    <div class="modal-content">
+      <h2>Modal Menu</h2>
+      <form *ngIf="routineForm" [formGroup]="routineForm" (ngSubmit)="onSubmit()">
+        <label for="title">Title:</label>
+        <input type="text" id="title" formControlName="title" />
+        <button type="submit">Create Routine</button>
+      </form>
+    </div>
+  </div>
+  

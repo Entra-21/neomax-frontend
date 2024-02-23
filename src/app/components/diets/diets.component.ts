@@ -22,8 +22,8 @@ export class DietsComponent {
   diets: any[] = [];
 
   ngOnInit() {
-    this.api.getTestData().subscribe(data => {
-      this.diets = data.diets;
+    this.api.getDiets().subscribe(data => {
+      this.diets = data;
     })
   }
 

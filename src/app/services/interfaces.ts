@@ -1,19 +1,29 @@
+export interface Execution {
+    reps: number;
+    sets: number;
+    weight: number;
+}
+
 export interface Exercise {
     id: number;
     name: string;
     gif: string;
+    muscle_group: string;
+    // execution: Execution;
 }
 
 export interface Routine {
-    id: number;
+    id: number | undefined;
     title: string;
     exercises: Exercise[];
+    workout: number;
 }
 
 export interface Workout {
-    id: number;
+    id: number | undefined;
     name: string;
     routines: Routine[];
+    active: boolean;
 }
 
 export interface Meal {
@@ -34,8 +44,3 @@ export interface Diet {
     days: Day[];
     active: boolean;
   }
-
-export interface TestData {
-    diets: any[];
-    workouts: Workout[];
-}
