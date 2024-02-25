@@ -1,0 +1,15 @@
+<div class="exercises-main" [ngClass]="{ shown: isShown === true }">
+  <app-search-bar></app-search-bar>
+  <button class="close-exercises" (click)="hideExercises()"></button>
+  <div class="exercises-container">
+    <div
+      class="exercise-card"
+      *ngFor="let exercise of exercises"
+      [ngClass]="{ '--dark': api.darkTheme === true }"
+      (click)="createNewExerciseSession(exercise)"
+    >
+      <h2>{{ this.exercise.name }}</h2>
+      <img src="{{ this.exercise.gif }}" alt="" />
+    </div>
+  </div>
+</div>
