@@ -1,11 +1,15 @@
 <div class="modal" *ngIf="isOpen">
-    <div class="modal-content">
-      <h2>Modal Menu</h2>
-      <form *ngIf="routineForm" [formGroup]="routineForm" (ngSubmit)="onSubmit()">
-        <label for="title">Title:</label>
-        <input type="text" id="title" formControlName="title" />
-        <button type="submit">Create Routine</button>
-      </form>
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>New routine</h2>
+      <button class="x-button" (click)="closeModal()"></button>
     </div>
+    <form *ngIf="routineForm" [formGroup]="routineForm" (ngSubmit)="onSubmit()">
+      <div class="title-input">
+        <label for="title">Title</label>
+        <input type="text" id="title" formControlName="title" />
+      </div>
+      <button class="submit-button" type="submit">Create routine</button>
+    </form>
   </div>
-  
+</div>

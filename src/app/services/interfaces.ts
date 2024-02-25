@@ -1,46 +1,48 @@
-export interface Execution {
+export interface ExerciseSession {
+    id: number | undefined;
+    routine: number | undefined;
+    exercise: Exercise;
     reps: number;
     sets: number;
     weight: number;
 }
 
 export interface Exercise {
-    id: number;
+    id: number | undefined;
     name: string;
     gif: string;
     muscle_group: string;
-    // execution: Execution;
 }
 
 export interface Routine {
-    id: number | undefined;
+    id: number;
     title: string;
-    exercises: Exercise[];
+    sessions: ExerciseSession[];
     workout: number;
 }
 
 export interface Workout {
-    id: number | undefined;
+    id: number;
     name: string;
     routines: Routine[];
     active: boolean;
 }
 
 export interface Meal {
-    id: number;
+    id: number | undefined;
     name: string;
     time: string;
 }
 
 export interface Day {
-    id: number;
+    id: number | undefined;
     name: string;
     meals: Meal[];
 }
 
 export interface Diet {
-    id: number;
+    id: number | undefined;
     name: string;
     days: Day[];
     active: boolean;
-  }
+}

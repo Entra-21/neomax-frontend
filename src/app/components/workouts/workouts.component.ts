@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ApiService } from '../../services/api.service';
-import { Routine, Workout } from '../../services/interfaces';
+import { Workout } from '../../services/interfaces';
 import { Router } from '@angular/router';
 import { HeaderComponent } from '../header/header.component';
 import { AddButtonComponent } from '../add-button/add-button.component';
@@ -24,7 +24,7 @@ export class WorkoutsComponent {
   @ViewChild(RoutineModalMenuComponent) routineModalMenu!: RoutineModalMenuComponent;
 
   title: string = 'Workouts';
-  workouts: any[] = [];
+  workouts: Workout[] = [];
 
   ngOnInit() {
     this.api.getWorkouts().subscribe(data => {

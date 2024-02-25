@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, map } from 'rxjs';
-import { Routine, Workout, Diet } from './interfaces';
+import { Routine, Workout, Diet, Exercise } from './interfaces';
 import axios from 'axios';
 
 
@@ -80,6 +80,32 @@ export class ApiService {
         })
     });
   }
+
+  getExercises(): Observable<Exercise[]> {
+    return new Observable<Exercise[]>(observer => {
+      axios.get<Exercise[]>(`${this.apiUrl}/exercises/`)
+        .then(response => {
+          observer.next(response.data);
+          observer.complete();
+        })
+        .catch(error => {
+          observer.error(error);
+        })
+    });
+  }
+
+  // createExerciseSession(exerciseId: number): Observable<any> {
+  //   return new Observable<any>(observer => {
+  //     axios.post(`${this.apiUrl}/routines/`, routine)
+  //       .then(response => {
+  //         observer.next(response.data);
+  //         observer.complete();
+  //       })
+  //       .catch(error => {
+  //         observer.error(error);
+  //       })
+  //   });
+  // }
 
   getDiets(): Observable<Diet[]> {
     return new Observable<Diet[]>(observer => {

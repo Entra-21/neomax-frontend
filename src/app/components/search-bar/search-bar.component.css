@@ -20,23 +20,27 @@
     background-image: url('../../../assets/images/mag-glass.png');
     background-repeat: no-repeat;
     background-size: 35px;
-    background-color: var(--black);
+    background-color: transparent;
     background-position: center;
 }
 .input-search{
-    width: 300px;
+    width: 250px;
     height: 50px;
     background-color: var(--black);
-    color: var(--green);
-    font-size: 25px;
+    color: var(--light-grey);
+    font-size: 20px;
     padding-left : 10px;
-    border: unset;
+    border: 1px solid var(--light-grey);
     border-radius: 25px;
     padding: 0px 15px;
     background-position-y: 50%;
 }
 
+.input-search:focus {
+    outline: 2px solid var(--green);
+}
+
 input::placeholder {
     color: var(--opaque-grey);
-    font-size: 25px;
+    font-size: 20px;
 }

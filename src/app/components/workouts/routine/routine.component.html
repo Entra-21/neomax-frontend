@@ -1,28 +1,50 @@
 <div class="routine-main">
   <h1>{{ routine?.title }}</h1>
   <div class="routine-container">
-    <div class="exercise-container" *ngFor="let exercise of routine?.exercises">
-      <div class="exercise-card" [ngClass]="{ '--dark': api.darkTheme === true }">
-        <h2>{{ this.exercise.name }}</h2>
-        <img src="{{ this.exercise.gif }}" alt="" />
+    <div class="exercise-container" *ngFor="let session of routine?.sessions">
+      <div
+        class="exercise-card"
+        [ngClass]="{ '--dark': api.darkTheme === true }"
+      >
+        <h2>{{ session.exercise.name }}</h2>
+        <img src="{{ session.exercise.gif }}" alt="" />
       </div>
-      <div class="exercise-execution" [ngClass]="{ '--dark': api.darkTheme === true }">
-        <div class="exercise-execution__row" >
-            <button class="minus">-</button>
-            <span>12 <br> reps</span>
-            <button class="plus">+</button>
+      <div
+        class="exercise-execution"
+        [ngClass]="{ '--dark': api.darkTheme === true }"
+      >
+        <div class="exercise-execution__row">
+          <button class="minus">-</button>
+          <span
+            >{{ session.reps }} <br />
+            reps</span
+          >
+          <button class="plus">+</button>
         </div>
         <div class="exercise-execution__row">
-            <button class="minus">-</button>
-            <span>4 <br> sets</span>
-            <button class="plus">+</button>
+          <button class="minus">-</button>
+          <span
+            >{{ session.sets }} <br />
+            sets</span
+          >
+          <button class="plus">+</button>
         </div>
         <div class="exercise-execution__row">
-            <button class="minus">-</button>
-            <span>50 <br> KG</span>
-            <button class="plus">+</button>
+          <button class="minus">-</button>
+          <span
+            >{{ session.weight }} <br />
+            KG</span
+          >
+          <button class="plus">+</button>
         </div>
       </div>
     </div>
+    <button class="new-session-button" (click)="showExercises()"></button>
+    <button *ngIf="isRoutineAltered" class="save-routine">Save</button>
   </div>
+  <app-exercises
+    [currentRoutine]="routine"
+    (routineUpdated)="onRoutineUpdated($event)"
+    (alterationStatus)="onAlterations($event)"
+  ></app-exercises>
 </div>
