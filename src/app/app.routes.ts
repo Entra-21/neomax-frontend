@@ -1,7 +1,9 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { DietsComponent } from './components/diets/diets.component';
+import { DietsComponent } from './components/diets/diets.component';
 import { WorkoutsComponent } from './components/workouts/workouts.component';
+import { RoutineComponent } from './components/workouts/routine/routine.component';
 import { RoutineComponent } from './components/workouts/routine/routine.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { DietComponent } from './components/diets/diet/diet.component';

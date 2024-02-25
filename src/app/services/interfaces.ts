@@ -40,6 +40,18 @@ export interface Day {
     meals: Meal[];
 }
 
+export interface Meal {
+    id: number;
+    name: string;
+    time: string;
+}
+
+export interface Day {
+    id: number;
+    name: string;
+    meals: Meal[];
+}
+
 export interface Diet {
     id: number | undefined;
     name: string;

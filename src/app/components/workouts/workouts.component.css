@@ -19,9 +19,12 @@ h2 {
 
 .workouts-container__scroll {
   overflow-x: auto;
+  overflow-x: auto;
 }
 
 .workouts-container__render {
+  display: flex;
+  width: fit-content;
   display: flex;
   width: fit-content;
 }
@@ -37,8 +40,24 @@ h2 {
   padding: 10px;
   border-radius: 20px;
   margin: 10px;
+.workouts-container__card {
+  background-image: linear-gradient(
+    to right,
+    var(--dark-grey),
+    rgb(10, 10, 10)
+  );
+  width: 250px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
 }
 
+.workouts-container__card h2 {
+  color: var(--green);
+  padding: 5px;
+  font-size: 25px;
+  margin: 0;
 .workouts-container__card h2 {
   color: var(--green);
   padding: 5px;
@@ -71,4 +90,6 @@ h2 {
 
 .workouts-container__card.--dark h2 {
   color: var(--light-grey);
+  color: var(--light-grey);
 }
+
