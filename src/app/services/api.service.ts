@@ -15,7 +15,6 @@ export class ApiService {
   private fakeApiUrl = 'assets/db.json'
 
   darkTheme: boolean = true;
-  darkTheme: boolean = true;
 
   constructor(private http: HttpClient) { }
 

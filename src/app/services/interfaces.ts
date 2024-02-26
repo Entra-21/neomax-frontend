@@ -41,13 +41,13 @@ export interface Day {
 }
 
 export interface Meal {
-    id: number;
+    id: number | undefined;
     name: string;
     time: string;
 }
 
 export interface Day {
-    id: number;
+    id: number | undefined;
     name: string;
     meals: Meal[];
 }
