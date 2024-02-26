@@ -1,2 +1,25 @@
-<p>home works!</p>
-<app-add-button></app-add-button>
+<div class="home-main">
+  <h1>NEOMAX</h1>
+  <div class="containers">
+    <div class="workout-container-main">
+      <h2>Your next workout session</h2>
+      <div class="workout-container">
+        <span>FST-7</span>
+        <h1>Chest</h1>
+      </div>
+    </div>
+    <div class="diet-container-main">
+      <h2>Your next meal</h2>
+      <div class="diet-container">
+        <div class="diet-container__headers">
+          <h3>Time</h3>
+          <h3>Meal</h3>
+        </div>
+        <div class="diet-container__meals" *ngIf="activeDiet">
+          <span class="meal-time">12:30</span>
+          <span class="meal-name">Roasted chicken with sweet potatoes</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

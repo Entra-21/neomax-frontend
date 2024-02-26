@@ -32,12 +32,14 @@ export interface Meal {
     id: number | undefined;
     name: string;
     time: string;
+    day: number | undefined;
 }
 
 export interface Day {
     id: number | undefined;
     name: string;
     meals: Meal[];
+    diet: number;
 }
 
 export interface Meal {

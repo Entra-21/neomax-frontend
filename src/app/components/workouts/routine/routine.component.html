@@ -1,5 +1,8 @@
 <div class="routine-main">
-  <h1>{{ routine?.title }}</h1>
+  <div class="routine-header">
+    <!-- <button class="close-routine"></button> -->
+    <h1>{{ routine?.title }}</h1>
+  </div>
   <div class="routine-container">
     <div class="exercise-container" *ngFor="let session of routine?.sessions">
       <div
@@ -40,7 +43,7 @@
       </div>
     </div>
     <button class="new-session-button" (click)="showExercises()"></button>
-    <button *ngIf="isRoutineAltered" class="save-routine">Save</button>
+    <button *ngIf="isRoutineAltered" class="save-routine" (click)="saveAlterations()">Save</button>
   </div>
   <app-exercises
     [currentRoutine]="routine"

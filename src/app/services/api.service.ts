@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, map } from 'rxjs';
-import { Routine, Workout, Diet, Exercise } from './interfaces';
+import { Routine, Workout, Diet, Exercise, Day } from './interfaces';
 import axios from 'axios';
 
 
@@ -18,8 +18,8 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  // getTestData(): Observable<TestData> {
-  //   return this.http.get<TestData>(this.apiUrl);
+  // getTestData(): Observable<any> {
+  //   return this.http.get<any>(this.fakeApiUrl);
   // }
 
   getWorkouts(): Observable<Workout[]> {
@@ -35,11 +35,38 @@ export class ApiService {
     });
   }
 
+  getExercises(): Observable<Exercise[]> {
+    return new Observable<Exercise[]>(observer => {
+      axios.get<Exercise[]>(`${this.apiUrl}/exercises/`)
+        .then(response => {
+          observer.next(response.data);
+          observer.complete();
+        })
+        .catch(error => {
+          observer.error(error);
+        })
+    });
+  }
+
   getWorkoutById(id: number): Observable<Workout | undefined> {
     return new Observable<Workout | undefined>(observer => {
       axios.get<Workout[]>(`${this.apiUrl}/workouts/`)
         .then(response => {
           const workout = response.data.find((w: Workout) => w.id === id);
+          observer.next(workout);
+          observer.complete();
+        })
+        .catch(error => {
+          observer.error(error);
+        });
+    });
+  }
+
+  getActiveWorkout(): Observable<Workout | undefined> {
+    return new Observable<Workout | undefined>(observer => {
+      axios.get<Workout[]>(`${this.apiUrl}/workouts/`)
+        .then(response => {
+          const workout = response.data.find((w: Workout) => w.active === true);
           observer.next(workout);
           observer.complete();
         })
@@ -81,31 +108,21 @@ export class ApiService {
     });
   }
 
-  getExercises(): Observable<Exercise[]> {
-    return new Observable<Exercise[]>(observer => {
-      axios.get<Exercise[]>(`${this.apiUrl}/exercises/`)
+
+  updateRoutine(routine: Routine): Observable<any> {
+    return new Observable<any>(observer => {
+      axios.put(`${this.apiUrl}/routines/${routine.id}/`, routine)
         .then(response => {
           observer.next(response.data);
           observer.complete();
+          console.log(routine)
         })
         .catch(error => {
           observer.error(error);
+          console.log(routine)
         })
     });
   }
-
-  // createExerciseSession(exerciseId: number): Observable<any> {
-  //   return new Observable<any>(observer => {
-  //     axios.post(`${this.apiUrl}/routines/`, routine)
-  //       .then(response => {
-  //         observer.next(response.data);
-  //         observer.complete();
-  //       })
-  //       .catch(error => {
-  //         observer.error(error);
-  //       })
-  //   });
-  // }
 
   getDiets(): Observable<Diet[]> {
     return new Observable<Diet[]>(observer => {
@@ -134,6 +151,20 @@ export class ApiService {
     });
   }
 
+  getActiveDiet(): Observable<Diet | undefined> {
+    return new Observable<Diet | undefined>(observer => {
+      axios.get<Diet[]>(`${this.apiUrl}/diets/`)
+        .then(response => {
+          const diet = response.data.find((d: Diet) => d.active === true);
+          observer.next(diet);
+          observer.complete();
+        })
+        .catch(error => {
+          observer.error(error);
+        });
+    });
+  }
+
   createDiet(diet: Diet): Observable<any> {
     return new Observable<any>(observer => {
       axios.post(`${this.apiUrl}/diets/`, diet)
@@ -143,6 +174,35 @@ export class ApiService {
         })
         .catch(error => {
           observer.error(error);
+          console.log(diet)
+        })
+    });
+  }
+
+  createDay(day: Day): Observable<any> {
+    return new Observable<any>(observer => {
+      axios.post(`${this.apiUrl}/days/`, day)
+        .then(response => {
+          observer.next(response.data);
+          observer.complete();
+        })
+        .catch(error => {
+          observer.error(error);
+        })
+    });
+  }
+
+  updateDay(day: Day): Observable<any> {
+    return new Observable<any>(observer => {
+      axios.put(`${this.apiUrl}/days/${day.id}/`, day)
+        .then(response => {
+          observer.next(response.data);
+          observer.complete();
+          console.log(day)
+        })
+        .catch(error => {
+          observer.error(error);
+          console.log(day)
         })
     });
   }

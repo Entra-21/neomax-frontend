@@ -4,6 +4,17 @@
   overflow-y: auto;
 }
 
+.close-routine {
+  grid-column: 1;
+  background-image: url("../../../../assets/images/arrow.png");
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+}
+
 .routine-container {
   margin-bottom: 80px;
 }
@@ -81,10 +92,6 @@
   background-color: var(--opaque-grey);
 }
 
-.exercise-card.--dark h2 {
-  /* border: 2px solid var(--pink); */
-}
-
 .exercise-card.--dark img {
   box-sizing: border-box;
   /* border: 2px solid var(--pink); */
@@ -95,13 +102,16 @@
 }
 
 .new-session-button {
+  position: absolute;
+  right: 30px;
+  bottom: 90px;
+  width: 60px;
+  height: 60px;
   background-image: url("../../../../assets/images/add-white.png");
   background-size: cover;
-  margin-top: 50px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
+  border-radius: 30px;
   border: unset;
+  box-shadow: 3px 3px 5px rgba(53, 53, 53, 0.7);
 }
 
 .save-routine {
@@ -114,5 +124,5 @@
   border: unset;
   border-radius: 15px;
   box-shadow: 3px 3px 5px rgb(5, 5, 5);
-  margin: 50px 100px;
+  margin: 30px 100px;
 }

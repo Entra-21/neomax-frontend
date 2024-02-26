@@ -40,24 +40,8 @@ h2 {
   padding: 10px;
   border-radius: 20px;
   margin: 10px;
-.workouts-container__card {
-  background-image: linear-gradient(
-    to right,
-    var(--dark-grey),
-    rgb(10, 10, 10)
-  );
-  width: 250px;
-  height: 150px;
-  padding: 10px;
-  border-radius: 20px;
-  margin: 10px;
 }
 
-.workouts-container__card h2 {
-  color: var(--green);
-  padding: 5px;
-  font-size: 25px;
-  margin: 0;
 .workouts-container__card h2 {
   color: var(--green);
   padding: 5px;

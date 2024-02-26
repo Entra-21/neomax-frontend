@@ -1,14 +1,25 @@
 <div
   class="day-expandable-container"
-  (click)="toggleExpansion()"
   [ngClass]="{
     expanded: isExpanded === true,
     '--dark': api.darkTheme === true
   }"
 >
-  <div class="day-expandable-container__header">
-    <button class="expand-button" [ngClass]="{ '--dark': api.darkTheme === true }" *ngIf="isExpanded">-</button>
-    <button class="expand-button" [ngClass]="{ '--dark': api.darkTheme === true }" *ngIf="!isExpanded">+</button>
+  <div class="day-expandable-container__header" (click)="toggleExpansion()">
+    <button
+      class="expand-button"
+      [ngClass]="{ '--dark': api.darkTheme === true }"
+      *ngIf="isExpanded"
+    >
+      -
+    </button>
+    <button
+      class="expand-button"
+      [ngClass]="{ '--dark': api.darkTheme === true }"
+      *ngIf="!isExpanded"
+    >
+      +
+    </button>
     <h2>{{ day?.name }}</h2>
   </div>
   <div class="day-meals" [ngClass]="{ expanded: isExpanded === true }">
@@ -20,5 +31,7 @@
       <span class="meal-time">{{ meal.time }} </span>
       <span class="meal-name">{{ meal.name }} </span>
     </div>
+    <button class="new-meal-button" (click)="openMealModal()"></button>
   </div>
+  <app-meal-modal-menu (mealCreated)="refreshMeals($event)"></app-meal-modal-menu>
 </div>

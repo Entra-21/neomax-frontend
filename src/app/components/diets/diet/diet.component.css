@@ -11,3 +11,16 @@
     height: fit-content;
     margin-bottom: 85px;
 }
+
+.new-day-button {
+    position: absolute;
+    right: 30px;
+    bottom: 90px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../../../assets/images/add-white.png");
+    background-size: cover;
+    border-radius: 30px;
+    border: unset;
+    box-shadow: 3px 3px 5px rgba(53, 53, 53, 0.7);
+  }

@@ -2,7 +2,6 @@ import { Component, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { ApiService } from '../../../services/api.service';
-import { Router } from '@angular/router';
 import { Routine } from '../../../services/interfaces';
 import { HeaderComponent } from '../../header/header.component';
 import { ExercisesComponent } from '../../exercises/exercises.component';
@@ -47,14 +46,19 @@ export class RoutineComponent {
     this.isRoutineAltered = isRoutineAltered;
   }
 
-  // saveAlterations() {
-  //   this.api.updateRoutine(this.currentRoutine).subscribe(
-  //     () => {
-  //       console.log('Session added successfully');
-  //     },
-  //     (error) => {
-  //       console.error('Error adding session:', error);
-  //       // Rollback the change if needed
-  //       this.currentRoutine.sessions = this.currentRoutine.sessions.filter(session => session.id !== newSession.id);
-  // }
+  saveAlterations() {
+    if (this.routine) {
+      this.api.updateRoutine(this.routine).subscribe(
+        () => {
+          console.log('Sessions added successfully');
+          this.isRoutineAltered = false;
+        },
+        (error) => {
+          console.error('Error adding sessions:', error);
+        }
+      )
+    } else {
+      console.error('Routine is undefined.')
+    }
+  }
 }
