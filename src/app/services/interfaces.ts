@@ -57,5 +57,4 @@ export interface Diet {
     name: string;
     days: Day[];
     active: boolean;
-    active: boolean;
 }
