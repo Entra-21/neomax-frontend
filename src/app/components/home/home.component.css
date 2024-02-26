@@ -1,0 +1,91 @@
+.home-main {
+  text-align: center;
+  max-height: 100vh;
+}
+
+.containers {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+h1 {
+  color: var(--green);
+  font-size: 36px;
+}
+
+h2 {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.diet-container-main,
+.workout-container-main {
+  height: fit-content;
+  text-align: left;
+  padding: 0px 30px 0px 30px;
+  margin: 30px 0px;
+}
+
+.diet-container,
+.workout-container {
+  height: 200px;
+  background-image: linear-gradient(
+    to right,
+    var(--dark-grey),
+    rgb(10, 10, 10)
+  );
+  border-radius: 20px;
+  padding: 0px 30px 0px 30px;
+}
+
+.diet-container__headers {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+}
+
+.diet-container__headers h3 {
+  color: var(--green);
+  width: 50%;
+  border-radius: 25px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.diet-container__meals {
+  display: flex;
+}
+
+.diet-container__meals span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  margin: 10px 0px;
+  font-weight: bolder;
+  text-shadow: 1px 0px 3px var(--dark-grey);
+}
+
+.meal-time {
+  font-size: 28px;
+}
+
+.meal-name {
+  font-size: 20px;
+}
+
+.workout-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.workout-container span {
+    padding: 20px;
+}
+
+.workout-container h1 {
+    font-size: 40px;
+    margin-left: 30px;
+}

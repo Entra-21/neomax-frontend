@@ -1,0 +1,120 @@
+.modal {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-image: linear-gradient(
+      to right,
+      var(--dark-grey),
+      rgb(10, 10, 10)
+    );
+    width: 80vw;
+    height: 450px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  
+  .modal-content h2 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  .modal-content label {
+    font-size: 26px;
+  }
+  
+  .x-button {
+    margin-top: 0;
+    background-image: url("../../../../../assets/images/x-icon.png");
+    background-size: contain;
+    background-color: transparent;
+    border: unset;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+  }
+  
+  .modal-content form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .name-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  
+  .name-input input {
+    border-radius: 10px;
+    background-color: var(--dark-grey);
+    border: 1px solid var(--light-grey);
+    height: 50px;
+    font-size: 30px;
+    color: var(--light-grey);
+    
+  }
+  
+  .name-input input:focus {
+    outline: 2px solid var(--green);
+  }
+  
+  .active-input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  
+  .active-input-container input {
+    position: absolute;
+    right: 15%;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+  }
+  
+  .checkbox-cover {
+    right: 0;
+    background-color: var(--light-grey);
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+  }
+  
+  .active-input-container input:checked ~ .checkbox-cover {
+    background-image: url("../../../../../assets/images/checkmark-dark.png");
+    background-size: contain;
+    background-color: transparent;
+  }
+  
+  .submit-button {
+    background-color: rgb(10, 10, 10);
+    height: 80px;
+    font-size: 30px;
+    font-family: 'K2D';
+    color: var(--light-grey);
+    border: unset;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgb(5, 5, 5);
+  }
+  

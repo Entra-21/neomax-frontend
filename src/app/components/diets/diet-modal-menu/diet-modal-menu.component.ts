@@ -19,6 +19,7 @@ export class DietModalMenuComponent {
 
   constructor(public api: ApiService, private formBuilder: FormBuilder) {
     this.dietForm = this.formBuilder.group({
+      id: [1, Validators.required],
       name: ['', Validators.required],
       active: [false],
     })
@@ -38,7 +39,8 @@ export class DietModalMenuComponent {
     if (this.dietForm?.valid) {
       const newDiet: Partial<Diet> = {
         name: this.dietForm?.value.name,
-        active: this.dietForm?.value.active
+        active: this.dietForm?.value.active,
+        days: []
       };
       this.api.createDiet(newDiet as Diet)
         .subscribe(

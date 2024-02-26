@@ -38,7 +38,8 @@ export class WorkoutModalMenuComponent {
     if (this.workoutForm?.valid) {
       const newWorkout: Partial<Workout> = {
         name: this.workoutForm?.value.name,
-        active: this.workoutForm?.value.active
+        active: this.workoutForm?.value.active,
+        routines: []
       };
       this.api.createWorkout(newWorkout as Workout)
         .subscribe(

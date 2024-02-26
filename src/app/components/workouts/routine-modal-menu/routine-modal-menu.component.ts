@@ -41,6 +41,7 @@ export class RoutineModalMenuComponent {
     if (this.routineForm?.valid && this.workoutId !== undefined) {
       const newRoutine: Partial<Routine> = {
         title: this.routineForm?.value.title,
+        sessions: [],
         workout: this.workoutId
       };
       this.api.createRoutine(newRoutine as Routine)

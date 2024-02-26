@@ -1,0 +1,20 @@
+<div class="modal" *ngIf="isOpen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>New meal</h2>
+        <button class="x-button" (click)="closeModal()"></button>
+      </div>
+      <form *ngIf="mealForm" [formGroup]="mealForm" >
+        <div class="name-input">
+          <label for="name">Name</label>
+          <input type="text" id="name" formControlName="name" />
+        </div>
+        <div class="time-input-container">
+          <label class="time-input" for="time">Time</label>
+          <input type="time" id="time" formControlName="time" />
+        </div>
+        <button class="submit-button" type="submit" (click)="createNewMeal()">Add meal</button>
+      </form>
+    </div>
+  </div>
+  

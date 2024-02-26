@@ -3,5 +3,7 @@
   <div class="days-container">
     <app-diet-day-container *ngFor="let day of diet?.days" [day]="day">
     </app-diet-day-container>
+    <button class="new-day-button" (click)="openDayModal()"></button>
   </div>
+  <app-day-modal-menu (dayCreated)="refreshDays()"></app-day-modal-menu>
 </div>
