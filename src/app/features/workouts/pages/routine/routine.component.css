@@ -1,0 +1,128 @@
+.routine-main {
+  max-height: 100vh;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.close-routine {
+  grid-column: 1;
+  background-image: url("../../../../../assets/images/arrow.png");
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.routine-container {
+  margin-bottom: 80px;
+}
+
+.exercise-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0px;
+  padding: 10px 0px;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.exercise-card {
+  width: 200px;
+  height: fit-content;
+  border-radius: 20px;
+}
+
+.exercise-card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 0px 3px 10px rgb(70, 70, 70);
+}
+
+.exercise-card h2 {
+  background-image: linear-gradient(
+    to right,
+    var(--dark-grey),
+    rgb(10, 10, 10)
+  );
+  border-radius: 20px 20px 0px 0px;
+  border-bottom: 3px solid var(--green);
+  height: 60px;
+  margin: 0;
+  padding: 0px 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--green);
+  font-size: 16px;
+}
+
+.exercise-execution {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.exercise-execution__row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.exercise-execution span {
+  display: inline-block;
+}
+
+.minus,
+.plus {
+  background-color: transparent;
+  border: unset;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  font-size: 34px;
+}
+
+.minus:active,
+.plus:active {
+  background-color: var(--opaque-grey);
+}
+
+.exercise-card.--dark img {
+  box-sizing: border-box;
+  /* border: 2px solid var(--pink); */
+}
+
+.exercise-execution.--dark button {
+  color: var(--green);
+}
+
+.new-session-button {
+  position: absolute;
+  right: 30px;
+  bottom: 90px;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../../../assets/images/add-white.png");
+  background-size: cover;
+  border-radius: 30px;
+  border: unset;
+  box-shadow: 3px 3px 5px rgba(53, 53, 53, 0.7);
+}
+
+.save-routine {
+  background-color: rgb(10, 10, 10);
+  height: 80px;
+  width: 200px;
+  font-size: 30px;
+  font-family: "K2D";
+  color: var(--light-grey);
+  border: unset;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px rgb(5, 5, 5);
+  margin: 30px 100px;
+}
