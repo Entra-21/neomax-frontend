@@ -7,6 +7,11 @@
 :root {
     --green: #daf204;
     --black: #131313;
+    --black-b: rgba(0, 0, 0, 0.7);
+    --black-grad: rgb(10, 10, 10);
+    --black-shadow: rgba(0, 0, 0, 0.3);
+    --black-rtn-btn: rgb(10, 10, 10);
+    --black-btn-shadow: rgb(5, 5, 5);
     --pink: #f90050;
     --light-grey: #cecece;
     --dark-grey: #1e1e1e;
