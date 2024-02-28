@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
-import { DietsComponent } from './components/diets/diets.component';
-import { WorkoutsComponent } from './components/workouts/workouts.component';
-import { RoutineComponent } from './components/workouts/routine/routine.component';
-import { ProfileComponent } from './components/profile/profile.component';
-import { DietComponent } from './components/diets/diet/diet.component';
+import { HomeComponent } from './features/home/home.component';
+import { DietsComponent } from './features/diets/diets.component';
+import { WorkoutsComponent } from './features/workouts/workouts.component';
+import { RoutineComponent } from './features/workouts/pages/routine/routine.component';
+import { ProfileComponent } from './features/profile/profile.component';
+import { DietComponent } from './features/diets/pages/diet/diet.component';
 
 export const routes: Routes = [
     { path: 'home', component: HomeComponent },
