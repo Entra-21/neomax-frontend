@@ -31,11 +31,9 @@ h2 {
 .diet-container,
 .workout-container {
   height: 200px;
-  background-image: linear-gradient(
-    to right,
-    var(--dark-grey),
-    rgb(10, 10, 10)
-  );
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, var(--dark-grey) 0%, #000000 74%);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   padding: 0px 30px 0px 30px;
 }
@@ -77,15 +75,15 @@ h2 {
 }
 
 .workout-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .workout-container span {
-    padding: 20px;
+  padding: 20px;
 }
 
 .workout-container h1 {
-    font-size: 40px;
-    margin-left: 30px;
+  font-size: 40px;
+  margin-left: 30px;
 }

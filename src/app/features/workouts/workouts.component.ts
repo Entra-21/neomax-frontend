@@ -8,11 +8,12 @@ import { RoutineModalMenuComponent } from './components/routine-modal-menu/routi
 import { HeaderComponent } from '../../shared/components/header/header.component';
 import { AddButtonComponent } from '../../shared/components/add-button/add-button.component';
 import { ApiService } from '../../shared/services/api.service';
+import { OptionsButtonComponent } from '../../shared/components/options-button/options-button.component';
 
 @Component({
   selector: 'app-workouts',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, AddButtonComponent, WorkoutModalMenuComponent, RoutineModalMenuComponent],
+  imports: [CommonModule, HeaderComponent, AddButtonComponent, WorkoutModalMenuComponent, RoutineModalMenuComponent, OptionsButtonComponent],
   templateUrl: './workouts.component.html',
   styleUrl: './workouts.component.css'
 })

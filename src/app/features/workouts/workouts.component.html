@@ -17,6 +17,7 @@
             (click)="navigateToRoutine(workout.id, routine.id)"
           >
             <h2>{{ routine.title }}</h2>
+            <app-options-button></app-options-button>
           </div>
           <div class="workouts-container__new-card">
             <button (click)="openRoutineModal(workout.id)"></button>
