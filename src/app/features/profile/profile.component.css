@@ -1,0 +1,40 @@
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    background-image: url('../../../assets/images/add-white.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 80px;
+}
+
+.profile-container {
+    text-align: center;
+    margin-top: 155px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    color: transparent;
+
+}
+
+h1,
+p {
+    margin: 0;
+}
