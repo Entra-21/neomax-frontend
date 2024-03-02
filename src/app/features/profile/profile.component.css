@@ -2,7 +2,7 @@
     width: 120px;
     height: 120px;
     display: flex;
-    background-image: url('../../../assets/images/add-white.png');
+    background-image: url('../../../assets/images/img-default.png');
     background-size: cover;
     background-position: center;
     border-radius: 100%;
@@ -15,7 +15,7 @@
 
 .profile-container {
     text-align: center;
-    margin-top: 155px;
+    margin-top: 180px;
 }
 
 input[type="file"] {
@@ -34,7 +34,7 @@ label {
 
 }
 
-h1,
+h2,
 p {
     margin: 0;
 }
